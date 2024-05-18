@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #becdfe;
+}
+body{
+    display: grid;
+    grid-template-areas: "cabecera cabecera cabecera" "columna1 columna2 columna3" "pie pie pie";
+    justify-content: center;
+}
+
+#cabecera, #pie, .columna1, .columna2, .columna3{
+    background-color: var(--color);
+    padding: 10px;
+    margin: 10px;
+}
+
+#cabecera{
+    grid-area: cabecera;
+}
+
+#pie{
+    grid-area: pie;
+}
+
+.columna1{
+    grid-area: columna1;
+}
+
+.columna2{
+    grid-area: columna2;
+}
+
+.columna3{
+    grid-area: columna3;
+}
+
+.columna1, .columna2, .columna3{
+    height: 300px;
+    width: 200px;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+}

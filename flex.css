@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #becdfe;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    justify-content: center;
+    place-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#cabecera, #pie, .columna1, .columna2, .columna3{
+    background-color: var(--color);
+    padding: 10px;
+    /*margin: 10px;*/
+}
+
+.columna1, .columna2, .columna3{
+    height: 300px;
+    width: 200px;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+}
